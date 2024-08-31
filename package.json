@@ -21,11 +21,13 @@
     "vue": "^3.4.37"
   },
   "devDependencies": {
+    "@ionic/vue-router": "^8.2.7",
     "@vitejs/plugin-vue": "^5.1.2",
     "prettier": "^3.3.3",
     "sass": "^1.77.8",
     "typescript": "^5.5.3",
     "vite": "^5.4.1",
+    "vue-router": "^4.4.3",
     "vue-tsc": "^2.0.29"
   }
 }

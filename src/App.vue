@@ -1,3 +1,12 @@
 <template>
-  <h1>Tiny Walks</h1>
+  <ion-app>
+    <app-header />
+
+    <ion-router-outlet></ion-router-outlet>
+  </ion-app>
 </template>
+
+<script setup lang="ts">
+import { IonApp, IonRouterOutlet } from '@ionic/vue'
+import { AppHeader } from './components/AppHeader'
+</script>
