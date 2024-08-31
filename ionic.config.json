@@ -1,0 +1,7 @@
+{
+  "name": "tinywalks",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}
