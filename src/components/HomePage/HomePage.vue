@@ -1,11 +1,12 @@
 <template>
-  <ion-page>
-    <h1>Card 1</h1>
-  </ion-page>
+  <ion-content>
+    <stories-card />
+  </ion-content>
 </template>
 
 <script setup lang="ts">
-import { IonPage } from '@ionic/vue'
+import { IonContent } from '@ionic/vue'
+import { StoriesCard } from '../StoriesCard'
 </script>
 
 <style src="./HomePage.scss"></style>
