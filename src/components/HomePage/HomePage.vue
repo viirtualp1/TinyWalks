@@ -7,7 +7,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { IonContent } from '@ionic/vue'
-import type { TaskItem } from '@/types/task'
+import type { TaskItem } from '../.././types/task'
 import { StoryTasks } from '../Stories/StoryTasks'
 
 const cityTasks = ref<TaskItem[]>([
@@ -16,7 +16,7 @@ const cityTasks = ref<TaskItem[]>([
 ])
 
 function toggleTask(id: number) {
-  const task = cityTasks.value.find((cityTask) => cityTask.id === id)
+  const task = cityTasks.value.find((cityTask: TaskItem) => cityTask.id === id)
 
   if (!task) {
     return

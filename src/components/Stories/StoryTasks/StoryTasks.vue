@@ -3,13 +3,13 @@
     <ion-card-header>
       <ion-card-title>Поездка</ion-card-title>
 
-      <ion-button v-if="!isTasksExpanded" @click="toggleTasks">
+      <ion-button @click="toggleTasks">
         {{ isTasksExpanded ? 'Скрыть' : 'Показать' }}
       </ion-button>
     </ion-card-header>
   </ion-card>
 
-  <ion-card>
+  <ion-card v-if="!isTasksExpanded">
     <ion-card-header>
       <ion-card-title>City Do-Do list</ion-card-title>
     </ion-card-header>
@@ -37,7 +37,7 @@ import {
   IonButton,
   IonList,
 } from '@ionic/vue'
-import type { TaskItem } from '@/types/task'
+import type { TaskItem } from '../../../types/task.ts'
 import { StoryTask } from './StoryTask'
 
 defineProps<{

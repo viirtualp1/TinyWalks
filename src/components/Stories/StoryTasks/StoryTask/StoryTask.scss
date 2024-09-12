@@ -1,0 +1,7 @@
+.story-task {
+  &__title {
+    &.is-done {
+      text-decoration: line-through;
+    }
+  }
+}
