@@ -1,15 +1,15 @@
 <template>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Поездка</ion-card-title>
+  <ion-card class="story-tasks">
+    <ion-card-header class="story-tasks__header">
+      <ion-card-title>{{ title }}</ion-card-title>
 
-      <ion-button @click="toggleTasks">
+      <ion-button @click="toggleTasks" size="small">
         {{ isTasksExpanded ? 'Скрыть' : 'Показать' }}
       </ion-button>
     </ion-card-header>
   </ion-card>
 
-  <ion-card v-if="!isTasksExpanded">
+  <ion-card v-if="isTasksExpanded">
     <ion-card-header>
       <ion-card-title>City Do-Do list</ion-card-title>
     </ion-card-header>
@@ -27,6 +27,8 @@
   </ion-card>
 </template>
 
+<style lang="scss" src="./StoryTasks.scss"></style>
+
 <script setup lang="ts">
 import { ref } from 'vue'
 import {
@@ -41,6 +43,7 @@ import type { TaskItem } from '../../../types/task.ts'
 import { StoryTask } from './StoryTask'
 
 defineProps<{
+  title: string
   tasks: TaskItem[]
 }>()
 
