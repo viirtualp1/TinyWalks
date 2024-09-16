@@ -24,6 +24,7 @@
   "devDependencies": {
     "@ionic/vue-router": "^8.2.7",
     "@vitejs/plugin-vue": "^5.1.2",
+    "@vueuse/core": "^11.1.0",
     "prettier": "^3.3.3",
     "sass": "^1.77.8",
     "typescript": "^5.5.3",
