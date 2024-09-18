@@ -4,7 +4,7 @@
       v-for="(task, taskIdx) in tasks"
       :task="task"
       :index="taskIdx"
-      @update:task="(task) => updateTask(task, taskIdx)"
+      @toggle="updateTask"
     />
   </ion-list>
 </template>
@@ -21,13 +21,10 @@ defineProps<{
 }>()
 
 const emit = defineEmits<{
-  (e: 'update:task', options: { task: TaskData; index: number }): void
+  (e: 'toggle', index: number): void
 }>()
 
-function updateTask(task: TaskData, taskIdx: number) {
-  emit('update:task', {
-    task,
-    index: taskIdx,
-  })
+function updateTask(index: number) {
+  emit('toggle', index)
 }
 </script>
