@@ -13,8 +13,8 @@
 
 <script setup lang="ts">
 import { IonContent } from '@ionic/vue'
-import { StoryCard } from '../Stories/StoryCard'
-import { searchStories } from '../../utils/stories'
+import { StoryCard } from '@/domains/stories'
+import { searchStories } from '@/utils/stories'
 </script>
 
-<style src="./HomePage.scss"></style>
+<style src="HomePage.scss"></style>

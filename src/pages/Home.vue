@@ -8,6 +8,6 @@
 <script setup lang="ts">
 import { IonPage } from '@ionic/vue'
 
-import { HomePage } from '../components/HomePage'
-import { AppHeader } from '../components/AppHeader'
+import { HomePage } from '@/domains/pages'
+import { AppHeader } from '@/domains/app'
 </script>

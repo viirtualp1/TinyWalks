@@ -21,10 +21,10 @@
 
 <script setup lang="ts">
 import { IonButton, IonCardTitle, IonItem } from '@ionic/vue'
-import { TaskData } from '../../../../types/story'
+import { TaskData } from '@/types/story'
 
-import IconMark from '../../.././../assets/icons/icon-mark.svg'
-import IconTrash from '../../.././../assets/icons/icon-trash.svg'
+import IconMark from '@/assets/icons/icon-mark.svg'
+import IconTrash from '@/assets/icons/icon-trash.svg'
 
 const props = defineProps<{
   task: TaskData

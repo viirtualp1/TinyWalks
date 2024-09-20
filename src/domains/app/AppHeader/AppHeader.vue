@@ -30,4 +30,4 @@ import {
 } from '@ionic/vue'
 </script>
 
-<style src="./AppHeader.scss"></style>
+<style src="AppHeader.scss"></style>

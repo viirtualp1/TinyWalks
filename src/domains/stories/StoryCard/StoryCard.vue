@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
 import { IonCard, IonCardTitle, IonCardContent, IonButton } from '@ionic/vue'
-import type { SearchStoryData } from '../../../types/story'
+import type { SearchStoryData } from '@/types/story'
 
 defineProps<SearchStoryData>()
 </script>

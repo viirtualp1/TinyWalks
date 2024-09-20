@@ -10,9 +10,9 @@
 import { computed, ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { IonTitle, IonContent } from '@ionic/vue'
-import { StoryData } from '../../types/story'
-import { stories } from '../../utils/stories'
-import { StoryTasks } from '../Stories/StoryTasks'
+import { StoryData } from '@/types/story'
+import { stories } from '@/utils/stories'
+import { StoryTasks } from '@/domains/stories'
 
 const route = useRoute()
 const story = ref<StoryData | null>(null)
@@ -22,11 +22,17 @@ const storyId = computed(() => {
 })
 
 function toggleTask(index: number) {
-  if (!story.value?.tasks[index]) {
+  if (!story.value) {
     return
   }
 
-  story.value.tasks[index] = options.task
+  const isDone = story.value.tasks[index].isDone
+
+  if (!isDone) {
+    return
+  }
+
+  story.value.tasks[index].isDone = !isDone
 }
 
 onMounted(() => {
@@ -34,4 +40,4 @@ onMounted(() => {
 })
 </script>
 
-<style src="./StoryPage.scss"></style>
+<style src="StoryPage.scss"></style>
