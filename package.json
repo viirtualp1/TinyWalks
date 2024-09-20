@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:ionic": "npx npm run ionic:serve --open --host=0.0.0.0 --port=8100",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
     "ionic:build": "npm run build",
@@ -23,6 +24,7 @@
   "devDependencies": {
     "@ionic/vue-router": "^8.2.7",
     "@vitejs/plugin-vue": "^5.1.2",
+    "@vueuse/core": "^11.1.0",
     "prettier": "^3.3.3",
     "sass": "^1.77.8",
     "typescript": "^5.5.3",

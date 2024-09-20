@@ -1,12 +1,20 @@
 <template>
   <ion-content>
-    <stories-card />
+    <h1>Истории</h1>
+
+    <story-card
+      v-for="story in searchStories"
+      :key="story.id"
+      :id="story.id"
+      :title="story.title"
+    />
   </ion-content>
 </template>
 
 <script setup lang="ts">
 import { IonContent } from '@ionic/vue'
-import { StoriesCard } from '../StoriesCard'
+import { StoryCard } from '../Stories/StoryCard'
+import { searchStories } from '../../utils/stories'
 </script>
 
 <style src="./HomePage.scss"></style>
