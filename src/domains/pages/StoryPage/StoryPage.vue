@@ -40,4 +40,4 @@ onMounted(() => {
 })
 </script>
 
-<style src="StoryPage.scss"></style>
+<style lang="scss" src="./StoryPage.scss"></style>

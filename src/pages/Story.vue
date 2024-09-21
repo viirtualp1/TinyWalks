@@ -3,5 +3,5 @@
 </template>
 
 <script setup lang="ts">
-import { StoryPage } from '../components/StoryPage'
+import { StoryPage } from '@/domains/pages'
 </script>

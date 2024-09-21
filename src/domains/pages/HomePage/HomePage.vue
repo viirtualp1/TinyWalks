@@ -17,4 +17,4 @@ import { StoryCard } from '@/domains/stories'
 import { searchStories } from '@/utils/stories'
 </script>
 
-<style src="HomePage.scss"></style>
+<style lang="scss" src="./HomePage.scss"></style>
